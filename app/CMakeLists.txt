@@ -1,0 +1,2 @@
+add_executable(RomiRobot_app RomiRobot_app.cpp)
+target_link_libraries(RomiRobot_app PRIVATE RomiRobot)
