@@ -1,5 +1,11 @@
 #pragma once
 
+const char* romirobot_git_version(void);
+
+const char* romirobot_git_revision(void);
+
+const char* romirobot_git_branch(void);
+
 namespace RomiRobot {
 
 /** @brief A very interesting function!
