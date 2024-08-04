@@ -1,7 +1,5 @@
-#include "RomiRobot/RomiRobot.hpp"
+#include "RomiRobot/RomiRobot.h"
 #include "catch2/catch.hpp"
-
-using namespace RomiRobot;
 
 TEST_CASE("add_one", "[adder]") {
   REQUIRE(add_one(0) == 1);

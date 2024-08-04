@@ -1,12 +1,14 @@
+#ifndef ROMIROBOT_H
+#define ROMIROBOT_H
+
+#ifdef __cplusplus
 #pragma once
+extern "C" {
+#endif
 
 const char* romirobot_git_version(void);
-
 const char* romirobot_git_revision(void);
-
 const char* romirobot_git_branch(void);
-
-namespace RomiRobot {
 
 /** @brief A very interesting function!
  *
@@ -19,4 +21,8 @@ namespace RomiRobot {
  */
 int add_one(int x);
 
-}  // namespace RomiRobot
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // ROMIROBOT_H

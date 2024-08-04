@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.9)
 project(
   RomiRobot
   VERSION 0.0.1
-  LANGUAGES CXX)
+  LANGUAGES C CXX)
 
 # Initialize some default paths
 include(GNUInstallDirs)
