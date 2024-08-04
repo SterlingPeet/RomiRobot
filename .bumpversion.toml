@@ -1,0 +1,12 @@
+[tool.bumpversion]
+commit = true
+current_version = "0.0.0"
+message = '🔖 Bump version: {current_version} → {new_version}'
+tag = true
+tag_message = '🔖 Bump version: {current_version} → {new_version}'
+tag_name = "v{new_version}"
+
+[[tool.bumpversion.files]]
+filename = 'CMakeLists.txt'
+replace = 'VERSION {new_version}'
+search = 'VERSION {current_version}'
