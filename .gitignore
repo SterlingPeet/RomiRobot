@@ -2,6 +2,25 @@
 sysroot*/
 *tar.gz
 
+# Linux filesystem stuff
+lost+found/
+Trash-*/
+*~
+
+# macOS filesystem stuff
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+__MACOSX/
+
+# Windows filesystem stuff
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
 # The scikit-build build directory
 _skbuild
 
