@@ -20,7 +20,6 @@ target-version = "py310"
 ignore = [
   # "ANN002",  # flake8-annotations missing-type-args
   # "ANN003",  # flake8-annotations missing-type-kwargs
-  "ANN101",  # flake8-annotations missing-type-self
   "D203",  # pydocstyle one-blank-line-before-class
   "D213",  # pydocstyle multi-line-summary-second-line
   "D413",  # pydocstyle missing blank line after last section
