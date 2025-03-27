@@ -71,7 +71,10 @@ if read_the_docs_build:
     builddir = cwd / 'build-cmake'
     builddir.mkdir(exist_ok=True)
     subprocess.check_call(
-        'cmake -DBUILD_DOCS=ON -DBUILD_TESTING=OFF  ../..'.split(), cwd=builddir
+        ['cmake', '-DBUILD_DOCS=ON', '-DBUILD_TESTING=OFF', '../..'],  # noqa: S607
+        cwd=builddir,
     )
-    subprocess.check_call('cmake --build . --target doxygen'.split(), cwd=builddir)
+    subprocess.check_call(
+        ['cmake', '--build', '.', '--target', 'doxygen'], cwd=builddir  # noqa: S607
+    )
     breathe_projects['RomiRobot'] = builddir / 'doc' / 'xml'
